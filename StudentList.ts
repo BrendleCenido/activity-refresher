@@ -97,4 +97,15 @@ export class StudentList {
             return student;
         }
     }
+
+        // create method and return number of students
+        numberOfStudent() {
+            return this.students.length;
+             
+         }
+         // delete one student and return list of students, use splice method (index, 1)
+         deleteStudent(index: number, num: number) {
+             this.students.splice(index, num);
+     
+         }
 }
